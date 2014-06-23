@@ -30,9 +30,16 @@ USAGE
 
 It's a filter, you use it in your html like this:
 
-    ```{{text|diff:otherText}}```
+    ```<div ng-bind-html="oldText|diff:newText"></div>```
 
-    This will show the diff between ```text``` and ```otherText```
+    This will show the diff between ```oldText``` and ```newText```
+
+    Note that the filter returns html with <ins> and <del> tags, so in order to
+    display it you have to use ng-bind-html.
+
+Here's a demo, that's worth more than a thousand words:
+
+[http://plnkr.co/edit/nfhA5g?p=preview](http://plnkr.co/edit/nfhA5g?p=preview)
 
 
 DEVELOPMENT
