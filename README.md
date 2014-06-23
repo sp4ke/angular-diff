@@ -34,7 +34,7 @@ It's a filter, you use it in your html like this:
 
 This will show the diff between ```oldText``` and ```newText```
 
-Note that the filter returns html with '''<ins>''' and '''<del>''' tags, so in order to
+Note that the filter returns html with '''&lt;ins&gt;''' and '''&lt;del&gt;''' tags, so in order to
 display it you have to use ng-bind-html.
 
 Here's a demo, that's worth more than a thousand words:
