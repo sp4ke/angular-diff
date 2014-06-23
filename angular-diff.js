@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('diff', [])
-  .filter('diff', function () {
+  .filter('diff', function ($sce) {
 
   /*
    * Javascript Diff Algorithm
@@ -173,7 +173,7 @@ angular.module('diff', [])
 
   // Actual filter
   return function(input, match) {
-    return diffString(input, match);
+    return $sce.trustAsHtml(diffString(input, match));
   };
 });
 
