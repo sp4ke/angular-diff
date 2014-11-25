@@ -1,6 +1,6 @@
 {
   "name": "angular-diff",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "description": "Diff filter for angular.js. Show inline text diff in your page",
   "repository": {
     "type": "git",
